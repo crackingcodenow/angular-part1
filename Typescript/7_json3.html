@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title></title>
+  <script>
+    let employee = [
+	{
+		firstname: "Diana",
+		lastname: "Annette",
+		age: "19"
+	},
+	{
+		firstname: "Emma",
+		lastname: "Louise",
+		age: "21"
+	},
+	{
+		firstname: "James",
+		lastname: "Alexander",
+		age: "20"
+	},
+	{
+		firstname: "Amanda",
+		lastname: "Sophia",
+		age: "21"
+	},
+	{
+		firstname: "Sophie",
+		lastname: "Marie",
+		age: "20"
+	}
+];
+
+document.write(`
+<table border="1" cellpadding="10px" cellspacing="10px" align="center">
+<thead style="background-color:green; color:white">
+<tr> 
+<th>F_name</th>
+<th>L_name</th>
+<th>Age</th>
+</tr>
+</thead>
+<tbody>
+`);
+
+employee.forEach((element,index) => {
+  document.write(`
+<tr>
+  <td>${element.firstname}</td>
+  <td>${element.lastname}</td>
+  <td>${element.age}</td>
+</tr>
+`);
+});
+
+  
+  
+  
+  </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

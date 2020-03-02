@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <title></title>
+  </head>
+
+  <body>
+    Enter your name:
+    <input type="text" id="txtName" onchange="submit()">
+    <h2>Hello, <span id="txtOutput"></span></h2>
+
+    <script>
+      var name;
+      function submit() {
+        name = document.getElementById("txtName").value;
+        document.getElementById("txtOutput").innerHTML = name;
+      }
+    </script>
+
+  </body>
+
+</html>

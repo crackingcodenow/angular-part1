@@ -1,0 +1,13 @@
+var str1 = "ANgular 8";
+var str2 = 'NodeJS';
+var str3 = "MongoDB";
+console.log(str1, str2, str3);
+var grp_name = "employees";
+var sal = 50000;
+var sqlQuery = "select * from " + grp_name + " where empSal>" + sal;
+console.log(sqlQuery);
+var uname = "admin";
+var upwd = "admin";
+var login = "login details";
+var query = "select * from " + login + " where uname='" + uname + "' and upwd='" + upwd + "'";
+console.log(query);
